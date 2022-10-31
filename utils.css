@@ -8,6 +8,26 @@
     justify-content: space-between;
 }
 
+.justify-content-around {
+    justify-content: space-around;
+}
+
 .align-center {
     align-items: center;
+}
+
+.block {
+    display: block;
+}
+
+.mb-07 {
+    margin-bottom: 0.7rem;
+}
+
+.mt-07 {
+    margin-top: 0.7rem;
+}
+
+.gap2 {
+    gap: 2em;
 }
