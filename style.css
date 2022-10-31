@@ -66,9 +66,93 @@ form input {
     fill: var(--red);
 }
 
+/* main card */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 1em 1em 1em;
+}
+
+p {
+    margin: 1rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main form {
+    margin: 1rem;
+}
+
+h1 {
+    color: var(--green);
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+
+main img {
+    margin-left: 10rem;
+}
+
+.login-input {
+    background-color: rgba(195, 233, 247, 0.68);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: 1px solid lightgrey;
+}
+
+.login-input--border-left {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* buttons */
+
+.green-button {
+    display: block;
+    margin: 1rem 0.5rem 0.5rem 0;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+}
+
+.orange-button {
+    background-color: var(--red);
+    color: var(--white);
+    border: 0;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    padding: 0.2rem 1rem;
+    margin: 0;
+}
+
 @media screen and (max-width:450px) {
     nav {
         flex-direction: column;
         margin-bottom: 1rem;
     }
+
+    .card-header {
+        flex-direction: column;
+    }
+
+    main img {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.card a:visited,
+.card a:link {
+    color: var(--blue);
 }
