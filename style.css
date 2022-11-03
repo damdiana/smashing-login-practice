@@ -156,3 +156,14 @@ main img {
 .card a:link {
     color: var(--blue);
 }
+
+@media (hover:hover) {
+    .card:hover {
+        transform: rotate(0);
+    }
+
+    .card {
+        transition: transform 0.25s;
+        transform: rotate(-5deg);
+    }
+}
